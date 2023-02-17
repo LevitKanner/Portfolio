@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Mono', monospace;;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@font-face {
+  font-family: 'Monument Regular';
+  src: local('Monument Regular'), url("./font/MonumentExtended-Regular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: local('Monument Extended'), url("./font/MonumentExtended-Ultrabold.otf") format('opentype');
+}
+
+:root {
+  @apply text-[#0B0F12] bg-[#E6E6E6];
+}
