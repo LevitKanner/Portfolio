@@ -8,16 +8,17 @@ const Profile = () => {
             <p id={'career-title'}>
                 fullstack web developer
             </p>
-            <div className={'flex flex-col space-y-2 mt-[60px] text-[12px] sm:text-[15px] font-light tracking-wider'}>
+            <div
+                className={'flex flex-col space-y-4 mt-[60px] text-[12px] sm:text-[15px] md:text-[20px] md:font-normal font-light tracking-wider'}>
                 <p className={'text-center'}>I'm a software engineer with {yearsOfExp}+ years experience</p>
                 <p className={'flex items-center justify-around'}>
                     <span className={'flex items-center space-x-1.5'}>
-                        <CiMobile3 className={'text-[13px]'}/>
+                        <CiMobile3/>
                         <span>+233 554 214 041</span>
                     </span>
 
                     <span className={'flex items-center space-x-1.5'}>
-                        <CiMail className={'text-[13px]'}/>
+                        <CiMail/>
                         <span>Lkanner21@gmail.com</span>
                     </span></p>
                 <p className={'text-center'}> available for projects</p>

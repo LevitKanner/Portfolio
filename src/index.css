@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-family: 'DM Mono', monospace;
+}
+
 li {
     @apply hover:underline hover:underline-offset-1
 }
@@ -21,19 +25,16 @@ li {
 }
 
 #career-title {
-    @apply font-monumentLarge text-[43px] sm:text-[90px] uppercase leading-tight font-[2000] text-center max-w-7xl mx-auto
+    @apply font-monumentLarge text-[43px] sm:text-[70px] lg:text-[90px] uppercase leading-tight font-[2000] text-center max-w-7xl mx-auto
 }
 
 #profile {
-    @apply px-[20px] h-full min-h-[80vh] flex flex-col justify-center
+    @apply px-[20px] h-full min-h-[80vh] xl:min-h-[50vh] flex flex-col justify-center
 }
 
 #intro {
     @apply min-h-[100vh]
 }
-
-
-
 
 
 .burger-wrapper {

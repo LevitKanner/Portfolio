@@ -24,7 +24,7 @@ const Header = () => {
                         )}
                     </ul>
                 </nav>
-                <li className={'hidden sm:block'}> <a href={'/'}>owl&trade; portfolio</a>  </li>
+                <li className={'hidden sm:block'}><a href={'/'}>owl&trade; portfolio</a></li>
                 <nav className={'hidden sm:block'}>
                     <ul className={'flex space-x-9'}>
                         {info.map((s) =>

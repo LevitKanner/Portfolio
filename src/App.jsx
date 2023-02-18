@@ -1,4 +1,3 @@
-import './App.css'
 import Header from "./components/Header.jsx";
 import Profile from "./components/Profile.jsx";
 
