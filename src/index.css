@@ -2,20 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: 'DM Mono', monospace;
+li {
+    @apply hover:underline hover:underline-offset-1
 }
 
 @font-face {
-  font-family: 'Monument Regular';
-  src: url("./font/MonumentExtended-Regular.otf") format('opentype');
+    font-family: 'Monument Regular';
+    src: url("./font/MonumentExtended-Regular.otf") format('opentype');
 }
 
 @font-face {
-  font-family: 'Monument Extended';
-  src: url("./font/MonumentExtended-Ultrabold.otf") format('opentype');
+    font-family: 'Monument Extended';
+    src: url("./font/MonumentExtended-Ultrabold.otf") format('opentype');
 }
 
 :root {
-  @apply text-[#0B0F12] bg-[#E6E6E6];
+    @apply text-[#0B0F12] bg-[#E6E6E6];
 }
+
+
+.burger-wrapper {
+    cursor: pointer;
+}
+
+#menu {
+    background: #E6E6E6;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10, 2, 3, 1);
+    transform: translateY(-100%);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+#menuSwitch {
+    display: none;
+}
+
+#menuSwitch:checked ~ #menu {
+    transform: translateX(0rem);
+}
+
+#burger {
+    /*position: absolute;*/
+    cursor: pointer;
+    width: 2rem;
+    height: 1.5rem;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#burger > div {
+    height: 2px;
+    width: 40px;
+    background-color: #0B0F12;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#menuSwitch:checked ~ #burger > div {
+    background-color: #0B0F12;
+}
+
+#menuSwitch ~ #burger > div:nth-child(1) {
+    opacity: 0;
+}
+
+#menuSwitch:checked ~ #burger > div:nth-child(2) {
+
+    transform: translateY(6px) rotate(20deg);
+}
+
+#menuSwitch:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-5.5px) rotate(-20deg);
+}
+
