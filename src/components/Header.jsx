@@ -8,7 +8,7 @@ const Header = () => {
     const info = [
         {name: 'Works', link: ''},
         {name: 'Resume', link: ''},
-        {name: 'Contact', link: ''},
+        {name: 'Contacts', link: ''},
     ]
     return (
         <header className={'px-[20px] sm:px-[40px] mb-[70px]'}>
@@ -24,7 +24,7 @@ const Header = () => {
                         )}
                     </ul>
                 </nav>
-                <span className={'hidden sm:block'}> owl&trade; portfolio </span>
+                <li className={'hidden sm:block'}> <a href={'/'}>owl&trade; portfolio</a>  </li>
                 <nav className={'hidden sm:block'}>
                     <ul className={'flex space-x-9'}>
                         {info.map((s) =>
@@ -43,13 +43,29 @@ const Header = () => {
                         <div></div>
                         <div></div>
                     </label>
-                    <nav id="menu"></nav>
+                    <nav id="menu">
+                        <div className={'h-full pt-[100px] flex flex-col justify-between'}>
+                            <a href={'/'} className={'text-[20px] font-semibold pt-4'}> owl&trade; portfolio </a>
+
+                            <nav className={'mt-20'}>
+                                <ul className={'flex flex-col space-y-9 font-extrabold text-[35px] font-monumentLarge'}>
+                                    {info.map((s) =>
+                                        (<li key={s.name}>
+                                            <a href={s.link}> {s.name}</a>
+                                        </li>)
+                                    )}
+                                </ul>
+                            </nav>
+
+                            <p className={'pb-7 text-[15px] font-light'}> {new Date().getFullYear()} &copy; all rights
+                                reserved.</p>
+                        </div>
+
+                    </nav>
                 </div>
 
 
             </div>
-
-
 
 
         </header>
