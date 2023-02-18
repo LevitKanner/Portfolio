@@ -19,7 +19,7 @@ const Header = () => {
                     <ul className={'flex space-x-9'}>
                         {socials.map((s) =>
                             (<li key={s.name}>
-                                <a href={s.link}> {s.name}</a>
+                                <a href={s.link} target={'_blank'}> {s.name}</a>
                             </li>)
                         )}
                     </ul>

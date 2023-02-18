@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        monument: ['Monument Regular', 'Monument Extended'],
+        monumentRegular: ['Monument Regular'],
+        monumentLarge: ['Monument Extended']
       }
     },
   },

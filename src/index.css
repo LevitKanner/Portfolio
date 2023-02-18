@@ -17,8 +17,23 @@ li {
 }
 
 :root {
-    @apply text-[#0B0F12] bg-[#E6E6E6];
+    @apply text-[#0B0F12] bg-[#E6E6E6] font-light text-[13px] uppercase tracking-widest;
 }
+
+#career-title {
+    @apply font-monumentLarge text-[40px] sm:text-[90px] uppercase leading-tight font-[2000] text-center max-w-7xl mx-auto
+}
+
+#profile {
+    @apply px-[20px] h-full min-h-[80vh] flex flex-col justify-center
+}
+
+#intro {
+    @apply min-h-[100vh]
+}
+
+
+
 
 
 .burger-wrapper {
@@ -76,10 +91,10 @@ li {
 
 #menuSwitch:checked ~ #burger > div:nth-child(2) {
 
-    transform: translateY(6px) rotate(20deg);
+    transform: translateY(4px) rotate(21deg);
 }
 
 #menuSwitch:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-5.5px) rotate(-20deg);
+    transform: translateY(-5px) rotate(-21deg);
 }
 
