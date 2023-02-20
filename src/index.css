@@ -19,17 +19,24 @@ li {
     font-family: 'Monument Extended';
     src: url("./font/MonumentExtended-Ultrabold.otf") format('opentype');
 }
+header {
+    @apply bg-[#E6E6E6]
+}
 
 :root {
     @apply text-[#0B0F12] bg-[#E6E6E6] font-light text-[13px] uppercase tracking-widest;
 }
 
 #career-title {
-    @apply font-monumentLarge text-[43px] sm:text-[70px] lg:text-[90px] uppercase leading-tight font-[2000] text-center max-w-7xl mx-auto
+    @apply font-monumentLarge text-[45px] sm:text-[70px] lg:text-[90px] xl:text-[120px] uppercase leading-tight font-[2000] text-center
 }
 
 #profile {
-    @apply px-[20px] h-full min-h-[80vh] xl:min-h-[50vh] flex flex-col justify-center
+    @apply px-[20px] h-full min-h-[70vh] xl:min-h-[50vh] 2xl:min-h-[30vh] flex flex-col justify-center
+}
+
+#aboutMe {
+    @apply my-20 px-[20px] sm:px-[40px] sm:text-[15px] md:text-[18px] md:font-normal font-light tracking-wider;
 }
 
 #intro {

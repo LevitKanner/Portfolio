@@ -11,9 +11,9 @@ const Header = () => {
         {name: 'Contacts', link: ''},
     ]
     return (
-        <header className={'px-[20px] sm:px-[40px] mb-[70px]'}>
+        <header className={'px-[20px] sm:px-[40px] mb-[70px] sticky top-0 z-10'}>
             <div
-                className={'bg-[#E6E6E6] flex justify-between font-light text-[13px] uppercase border-b border-b-black h-[70px] flex justify-center items-center tracking-wide'}>
+                className={'bg-[#E6E6E6] flex justify-between font-light text-[13px] uppercase  sm:border-b border-b-black h-[70px] flex justify-center items-center tracking-wide'}>
 
                 <nav className={'hidden sm:block'}>
                     <ul className={'flex space-x-9'}>
