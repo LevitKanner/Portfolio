@@ -3,12 +3,12 @@ import {CiMail, CiMobile3} from "react-icons/ci";
 
 const Contacts = () => {
     return (
-        <div className={'flex flex-col items-center my-14 max-w-3xl mx-auto'}>
+        <div className={'flex flex-col items-center mt-14 mb-24 max-w-4xl mx-auto'}>
             <p id={'career-title'} className={' leading-tight'}>
                 get in touch
             </p>
 
-            <p className={'w-full mt-4 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 '}>
+            <p className={'contacts'}>
                     <span className={'flex items-center space-x-1.5'}>
                         <CiMobile3 className={'hidden sm:block'}/>
                         <span>+233 554 214 041</span>

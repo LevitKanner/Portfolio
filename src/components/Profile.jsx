@@ -9,7 +9,7 @@ const Profile = () => {
                 fullstack web developer
             </p>
             <div
-                className={'flex flex-col space-y-4 mt-[60px] sm:text-[15px] md:text-[18px] md:font-normal xl:text-[24px] font-light tracking-wider'}>
+                className={'flex flex-col space-y-4 mt-[60px] sm:text-[15px] md:text-[16px] md:font-normal font-light tracking-wider'}>
                 <p className={'text-center'}>I'm a software engineer with {yearsOfExp}+ years experience</p>
                 <p className={'flex items-center justify-between sm:justify-around'}>
                     <span className={'flex items-center space-x-1.5'}>

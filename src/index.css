@@ -19,6 +19,12 @@ li {
     font-family: 'Monument Extended';
     src: url("./font/MonumentExtended-Ultrabold.otf") format('opentype');
 }
+
+@font-face {
+    font-family: 'Restonasi';
+    src: url("./font/restonasi/Restonasi-Italic-BF63ca12442bbbb.otf") format('opentype');
+}
+
 header {
     @apply bg-[#E6E6E6]
 }
@@ -32,17 +38,20 @@ header {
 }
 
 #profile {
-    @apply px-[20px] h-full min-h-[70vh] xl:min-h-[50vh] 2xl:min-h-[30vh] flex flex-col justify-center
+    @apply px-[15px] h-full min-h-[70vh] xl:min-h-[50vh] 2xl:min-h-[30vh] flex flex-col justify-center
 }
 
 #aboutMe {
-    @apply my-20 px-[20px] sm:px-[40px] sm:text-[15px] md:text-[18px] md:font-normal font-light tracking-wider;
+    @apply my-20 px-[15px] sm:px-[40px] sm:text-[15px] md:text-[16px] md:font-normal font-light tracking-wider;
 }
 
 #intro {
     @apply min-h-[100vh]
 }
 
+.contacts {
+    @apply w-full mt-4 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:justify-between sm:text-[15px] md:text-[18px] lg:text-[25px] md:font-normal font-light tracking-wider
+}
 
 .burger-wrapper {
     cursor: pointer;
