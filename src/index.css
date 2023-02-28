@@ -26,11 +26,11 @@ li {
 }
 
 header {
-    @apply bg-[#E6E6E6]
+    @apply bg-[#E6E6E6] dark:bg-[#0b0f12]
 }
 
 :root {
-    @apply text-[#0B0F12] bg-[#E6E6E6] font-light text-[13px] uppercase tracking-widest;
+    @apply dark:bg-[#0b0f12] dark:text-white text-[#0B0F12] bg-[#E6E6E6] font-light text-[13px] uppercase tracking-widest;
 }
 
 #career-title {
@@ -50,7 +50,7 @@ header {
 }
 
 .contacts {
-    @apply w-full mt-4 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:justify-between sm:text-[15px] md:text-[18px] lg:text-[25px] md:font-normal font-light tracking-wider
+    @apply w-full px-[20px] sm:px-[40px] mt-4 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:justify-between sm:text-[15px] md:text-[18px] lg:text-[25px] md:font-normal font-light tracking-wider
 }
 
 .burger-wrapper {
@@ -59,8 +59,6 @@ header {
 
 #menu {
     background: #E6E6E6;
-    /*width: 100vw;*/
-    /*height: 100vh;*/
     position: fixed;
     right: 0;
     left: 0;
@@ -71,6 +69,12 @@ header {
     z-index: 0;
     transition: 0.5s;
     padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    #menu {
+        background: #0b0f12;
+    }
 }
 
 #menuSwitch {
@@ -104,6 +108,17 @@ header {
 #menuSwitch:checked ~ #burger > div {
     background-color: #0B0F12;
 }
+
+@media (prefers-color-scheme: dark) {
+    #burger > div  {
+        background-color: #FFF;
+    }
+    #menuSwitch:checked ~ #burger > div {
+        background-color: #FFF;
+    }
+}
+
+
 
 #menuSwitch ~ #burger > div:nth-child(1) {
     opacity: 0;
