@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Experience from "./components/Experience.jsx";
 import WorkHistory from "./pages/WorkHistory.jsx";
+import Tools from "./components/Tools.jsx";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Profile/>
                 <AboutMe/>
                 <WorkHistory/>
+                <Tools/>
                 <Contacts/>
                 <Footer/>
             </section>
