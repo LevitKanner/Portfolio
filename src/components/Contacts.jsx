@@ -3,7 +3,7 @@ import {CiMail, CiMobile3} from "react-icons/ci";
 
 const Contacts = () => {
     return (
-        <div className={'flex flex-col items-center mt-14 mb-24 max-w-4xl mx-auto'}>
+        <div className={'flex flex-col items-center justify-center min-h-[40vh] md:min-h-[65vh] lg:min-h-[80vh] max-w-5xl mx-auto'}>
             <p id={'career-title'} className={' leading-tight'}>
                 get in touch
             </p>

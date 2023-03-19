@@ -34,11 +34,11 @@ header {
 }
 
 #career-title {
-    @apply font-monumentLarge text-[45px] sm:text-[70px] lg:text-[90px] xl:text-[120px] uppercase leading-tight font-[2000] text-center
+    @apply font-monumentLarge text-[45px] sm:text-[70px] lg:text-[90px] xl:text-[120px] 2xl:text-[300px] uppercase leading-tight font-[2000] text-center
 }
 
 #profile {
-    @apply px-[15px] h-full min-h-[70vh] xl:min-h-[50vh] 2xl:min-h-[30vh] flex flex-col justify-center
+    @apply px-[15px] h-full flex flex-col justify-center min-h-[75vh] md:min-h-[80vh] xl:min-h-[75vh] 2xl:min-h-[45vh]
 }
 
 #aboutMe {
@@ -51,6 +51,10 @@ header {
 
 .contacts {
     @apply w-full px-[20px] sm:px-[40px] mt-4 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:justify-between sm:text-[15px] md:text-[18px] lg:text-[25px] md:font-normal font-light tracking-wider
+}
+
+.secondary-title {
+    @apply text-[25px] leading-[40px] sm:text-[45px] sm:leading-[45px] lg:text-[50px] lg:leading-[50px] font-monumentLarge
 }
 
 .burger-wrapper {
